@@ -59,7 +59,7 @@ public class QuickSorter extends Sorter {
 					quickSort(array, i, high,  display);
 					
 				}
-				
+				display.updateDisplay();
 		}
 		
 			
