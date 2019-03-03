@@ -51,5 +51,11 @@ class _04_SearchTest {
 	public void testExponentialSearch() {
 		//4. use the assertEquals method to test your exponential search method.
 		//   remember that the array must be sorted
+		int[] unsorted = {0, 1, 2, 3, 4};
+		int[] sorted = {0, 3, 3, 4, 6};
+		int[] sorted2 = {0, 3, 3, 4, 4};
+		assertEquals(0, _03_ExponentialSearch.exponentialSearch(unsorted, 0));
+		assertEquals(4, _03_ExponentialSearch.exponentialSearch(sorted, 4));
+		assertEquals(3, _03_ExponentialSearch.exponentialSearch(sorted2, 3));
 	}
 }
