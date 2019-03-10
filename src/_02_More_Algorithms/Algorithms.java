@@ -1,5 +1,6 @@
 package _02_More_Algorithms;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class Algorithms {
@@ -46,14 +47,21 @@ public class Algorithms {
 		
 		return a;
 	}
-	public static Object containsSOS(List<String> message1) {
+	public static boolean containsSOS(List<String> message1) {		
 		for (int i = 0; i < message1.size(); i++) {
-			//if(message1.) {
+			String s =  "... --- ... ";
+			if(message1.get(i).contains(s)) {
 				return true;
 			}
-	//	}
-		
+		}
 		return false;
 		
 	}
+	public static void sortScores( List<Double> results) {
+		for (int i = 0; i < results.size(); i++) {
+			
+		}
+	}
+
+	
 }
